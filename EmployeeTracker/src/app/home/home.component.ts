@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IEmployeeInfo } from '../Data-Models/iemployee-info';
 
 @Component({
   selector: 'fai-home',
@@ -6,16 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  employeeName: string = 'James';
-
-  textStyle: string = 'blue';
+  employeeInfo: IEmployeeInfo = {
+    Name: 'johny',
+    Project: 'LVIS',
+    Technology: 'DotNet',
+    Role: 'Developer',
+    DOJ: '23/12/2020',
+    Id: 623456,
+    Rating:4
+  };
 
   constructor() {}
 
   ngOnInit(): void {}
 
-  btnClick(){
-    console.log('invoked');
-    this.employeeName="btnclicked"
-  };
+  onRatingClicked(message: string): void {
+    console.log(message);
+  }
 }

@@ -6,24 +6,37 @@
       </div>
       <div class="panel-body">
         <div class="row">
-          <div class="col-lg-3 center-block">Name</div>
-          <div class="col-lg-9">{{ employeeName }}</div>
-          <br />
-          <br />
-          <div class="col-md-12" [style.color]="textStyle">
-            I have property binding
-          </div>
-          <br />
-          <br />
-          <div class="col-lg-4 center-block">Name (twoway Binding)</div>
-          <div class="col-lg-8">
-            <input type="text" name="name" id="name" [(ngModel)]="employeeName" />
-          </div>
-          <br>
-          <br>
-          <div class="col-md-12">
-            <input type="button" name="eventbtn" value="EventBinding" (click)="btnClick()" />
-          </div>
+          <table class="table">
+            <tr>
+              <td class="col-lg-2">Id :</td>
+              <td class="col-lg-10">{{ employeeInfo.Id }}</td>
+            </tr>
+            <tr>
+              <td class="col-lg-2">Name :</td>
+              <td class="col-lg-10">{{ employeeInfo.Name }}</td>
+            </tr>
+            <tr>
+              <td class="col-lg-2">Role :</td>
+              <td class="col-lg-10">{{ employeeInfo.Role }}</td>
+            </tr>
+            <tr>
+              <td class="col-lg-2">Technology :</td>
+              <td class="col-lg-10">{{ employeeInfo.Technology }}</td>
+            </tr>
+            <tr>
+              <td class="col-lg-2">Project :</td>
+              <td class="col-lg-10">{{ employeeInfo.Project }}</td>
+            </tr>
+            <tr>
+              <td class="col-lg-2">DOJ :</td>
+              <td class="col-lg-10">{{ employeeInfo.DOJ }}</td>
+            </tr>
+            <tr>
+              <td class="col-lg-2">Rating :</td>
+              <td class="col-lg-10"><fai-ratings [rating]='employeeInfo.Rating' (ratingClicked)='onRatingClicked($event)'></fai-ratings></td>
+            </tr>
+          </table>
+
         </div>
       </div>
     </div>
