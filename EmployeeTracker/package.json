@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "start-api": "json-server --watch api/books.json"
+    "start-api": "json-server --watch api/employees.json"
   },
   "private": true,
   "dependencies": {
