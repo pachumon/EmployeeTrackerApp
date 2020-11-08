@@ -1,0 +1,31 @@
+<div class="container-fluid">
+  <div class="col-lg-6 col-lg-offset-3">
+    <div class="panel panel-default panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">Employee Info</h3>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-lg-3 center-block">Name</div>
+          <div class="col-lg-9">{{ employeeName }}</div>
+          <br />
+          <br />
+          <div class="col-md-12" [style.color]="textStyle">
+            I have property binding
+          </div>
+          <br />
+          <br />
+          <div class="col-lg-4 center-block">Name (twoway Binding)</div>
+          <div class="col-lg-8">
+            <input type="text" name="name" id="name" [(ngModel)]="employeeName" />
+          </div>
+          <br>
+          <br>
+          <div class="col-md-12">
+            <input type="button" name="eventbtn" value="EventBinding" (click)="btnClick()" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
