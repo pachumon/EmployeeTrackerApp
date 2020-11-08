@@ -1,0 +1,44 @@
+{
+  "employees": [
+    {
+      "Name": "James",
+      "Technology": "Angular",
+      "Project": "LVIS",
+      "DOJ": "2017/02/19",
+      "role":"Developer",
+      "id": 612345
+    },
+    {
+      "Name": "John",
+      "Technology": "Angular",
+      "Project": "LVIS",
+      "DOJ": "2016/02/19",
+      "role":"Developer",
+      "id": 612110
+    },
+    {
+      "Name": "Alice",
+      "Technology": "DotNet",
+      "Project": "LVIS",
+      "DOJ": "2018/02/19",
+      "role":"Developer",
+      "id": 612400
+    },
+    {
+      "Name": "Danerys",
+      "Technology": "React",
+      "Project": "FAMOS",
+      "DOJ": "2019/02/19",
+      "role":"Developer",
+      "id": 612656
+    },
+    {
+      "Name": "Aryan",
+      "Technology": "Vue",
+      "Project": "IGNITE",
+      "DOJ": "2020/02/19",
+      "role":"Developer",
+      "id": 612800
+    }
+  ]
+}
