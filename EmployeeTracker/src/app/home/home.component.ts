@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IEmployeeInfo } from '../Data-Models/iemployee-info';
+import { AppDataService } from '../shared/Services/app-data.service';
 
 @Component({
   selector: 'fai-home',
@@ -7,19 +8,15 @@ import { IEmployeeInfo } from '../Data-Models/iemployee-info';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  employeeInfo: IEmployeeInfo = {
-    Name: 'johny',
-    Project: 'LVIS',
-    Technology: 'DotNet',
-    Role: 'Developer',
-    DOJ: '23/12/2020',
-    Id: 623456,
-    Rating:4
-  };
+  employeeInfo: IEmployeeInfo = null;
 
-  constructor() {}
+  constructor(private dataService: AppDataService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.employeeInfo = this.dataService.GetEmployeeInfo();
+    }, 3000);
+  }
 
   onRatingClicked(message: string): void {
     console.log(message);

@@ -9,31 +9,31 @@
           <table class="table">
             <tr>
               <td class="col-lg-2">Id :</td>
-              <td class="col-lg-10">{{ employeeInfo.Id }}</td>
+              <td class="col-lg-10">{{ employeeInfo?.Id }}</td>
             </tr>
             <tr>
               <td class="col-lg-2">Name :</td>
-              <td class="col-lg-10">{{ employeeInfo.Name }}</td>
+              <td class="col-lg-10">{{ employeeInfo?.Name }}</td>
             </tr>
             <tr>
               <td class="col-lg-2">Role :</td>
-              <td class="col-lg-10">{{ employeeInfo.Role }}</td>
+              <td class="col-lg-10">{{ employeeInfo?.Role }}</td>
             </tr>
             <tr>
               <td class="col-lg-2">Technology :</td>
-              <td class="col-lg-10">{{ employeeInfo.Technology }}</td>
+              <td class="col-lg-10">{{ employeeInfo?.Technology }}</td>
             </tr>
             <tr>
               <td class="col-lg-2">Project :</td>
-              <td class="col-lg-10">{{ employeeInfo.Project }}</td>
+              <td class="col-lg-10">{{ employeeInfo?.Project }}</td>
             </tr>
             <tr>
               <td class="col-lg-2">DOJ :</td>
-              <td class="col-lg-10">{{ employeeInfo.DOJ }}</td>
+              <td class="col-lg-10">{{ employeeInfo?.DOJ }}</td>
             </tr>
             <tr>
               <td class="col-lg-2">Rating :</td>
-              <td class="col-lg-10"><fai-ratings [rating]='employeeInfo.Rating' (ratingClicked)='onRatingClicked($event)'></fai-ratings></td>
+              <td class="col-lg-10"><fai-ratings [rating]='employeeInfo?.Rating' (ratingClicked)='onRatingClicked($event)'></fai-ratings></td>
             </tr>
           </table>
 
