@@ -1,6 +1,7 @@
 {
   "employees": [
     {
+      "Rating":3,
       "Name": "James",
       "Technology": "Angular",
       "Project": "LVIS",
@@ -9,6 +10,7 @@
       "Id": 612345
     },
     {
+      "Rating":3,
       "Name": "John",
       "Technology": "Angular",
       "Project": "LVIS",
@@ -17,6 +19,7 @@
       "Id": 612110
     },
     {
+      "Rating":4,
       "Name": "Alice",
       "Technology": "DotNet",
       "Project": "LVIS",
@@ -25,6 +28,7 @@
       "Id": 612400
     },
     {
+      "Rating":3,
       "Name": "Danerys",
       "Technology": "React",
       "Project": "FAMOS",
@@ -33,6 +37,7 @@
       "Id": 612656
     },
     {
+      "Rating":5,
       "Name": "Aryan",
       "Technology": "Vue",
       "Project": "IGNITE",
