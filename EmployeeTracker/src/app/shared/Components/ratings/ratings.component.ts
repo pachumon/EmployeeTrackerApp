@@ -11,11 +11,10 @@ export class RatingsComponent implements OnInit {
   @Output() ratingClicked: EventEmitter<string> = new EventEmitter<string>();
 
   ngOnInit(): void {
-    console.log(this.rating);
+
 
   }
   ngOnChanges(): void {
-    console.log(this.rating);
     this.starWidth = (this.rating * 75) / 5;
   }
 

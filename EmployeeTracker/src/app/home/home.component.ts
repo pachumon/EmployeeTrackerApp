@@ -13,9 +13,16 @@ export class HomeComponent implements OnInit {
   constructor(private dataService: AppDataService) {}
 
   ngOnInit(): void {
-    setTimeout(() => {
-      this.employeeInfo = this.dataService.GetEmployeeInfo();
-    }, 3000);
+    this.dataService.GetEmployeeInfoObservable().subscribe(
+      (data) => {
+        console.log(data);
+        this.employeeInfo=data;
+      },
+      (error) => console.log(error)
+    );
+    // setTimeout(() => {
+    //   this.employeeInfo = this.dataService.GetEmployeeInfo();
+    // }, 3000);
   }
 
   onRatingClicked(message: string): void {
