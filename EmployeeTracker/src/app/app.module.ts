@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { RatingsComponent } from './shared/Components/ratings/ratings.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { RatingsComponent } from './shared/Components/ratings/ratings.component'
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
